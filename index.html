@@ -6,12 +6,12 @@
     <title>Pumpkin Chunkin Scoreboard</title>
 
     <!--styles-->
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="style.css?v=20210925" type="text/css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
     <!--Javascript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
-    <script src="scoreboard.js" type="text/javascript"></script>
+    <script src="scoreboard.js?v=20210925" type="text/javascript"></script>
     <script type="text/javascript">
         window.onload = function() {
             jQuery(document).ready(function($){
@@ -24,9 +24,12 @@
 </head>
 <body>
     <div class="contentWrapper">
-        <h1>SD Mines Pumpkin Chunkin</h1>
-        <h1 class="subhead">Live Scoreboard</h1>
-        
+        <h1 class="logo">South Dakota Mines</h1>
+        <h1 class="subhead">Pumpkin Chunkin Live Scoreboard</h1>
+        <div class="roundsButtons">
+            <a class="roundsButton" id="morningRounds" href="./?rnd=0">Morning Rounds</a>
+            <a class="roundsButton" id="afternoonRounds" href="./?rnd=1">Afternoon Rounds</a>
+        </div>
         <div id="leaderboard"></div>
         <div id="scoreboard"></div>
         <div id="loadingWheel" class="spinnerContainer">
